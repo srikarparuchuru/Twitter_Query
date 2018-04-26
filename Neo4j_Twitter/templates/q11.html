@@ -1,0 +1,17 @@
+<!doctype html>
+<style type="text/css">
+
+</style>
+<table >
+	<tr>
+			<th> user </th>
+			<th> co-mentioned user </th>
+			<th> tweet_id's </th>
+	</tr>
+	{% for i in rows1: %}
+		{% for j in range(4): %}
+			<td>{{i[j]}}</td>
+		{% endfor %}
+	</tr> 
+    {%endfor%}
+</table>
